@@ -12,4 +12,4 @@ Zarinpal is a Iranian online transaction provider and in this project I biult th
 ## Avaliable links :
 
 - [Zarinpal site](https://www.zarinpal.com/)
-- [The clone](https://
+- [The clone](https://zarinpal-shayantalebian.netlify.app/)
