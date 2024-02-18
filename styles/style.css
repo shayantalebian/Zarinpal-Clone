@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+body {
+  letter-spacing: -0.5px;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: font-regular;
+}
+
+/* DEFUALT */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.section {
+  width: 1170px;
+  margin: 10px auto;
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  background-color: #000;
+  height: 56px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-background {
+  width: 100%;
+  max-width: 650px;
+  height: 56px;
+  background: url(../images/header.svg) no-repeat 50%;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-texts {
+  z-index: 2;
+  color: #fff;
+  font-family: font-bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 3px;
+}
+
+.banner-texts p {
+  font-size: 21px;
+  word-wrap: break-word;
+}
+
+.banner-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px 5px 5px;
+  background-color: hsla(0, 0%, 100%, 0.25);
+  border-radius: 24px;
+  gap: 4px;
+  z-index: 2;
+  margin-bottom: 3px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.banner-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-family: font-medium;
+}
+
+.banner-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* HEADER */
