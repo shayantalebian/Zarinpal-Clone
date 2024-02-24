@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -24,6 +25,10 @@ a {
 .section {
   width: 1170px;
   margin: 10px auto;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* BANNER */
@@ -100,3 +105,139 @@ a {
 }
 
 /* HEADER */
+.header {
+  padding: 11px 0 7px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  flex-grow: 0;
+  -moz-flex-grow: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.logo img {
+  height: 30px;
+  width: 141px;
+  margin-top: 11px;
+  margin-right: 20px;
+}
+
+.navbar {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu {
+  z-index: 1;
+  margin: 0 15px;
+  display: inline-block;
+  color: #303030;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  font-family: font-medium-2;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.4s;
+  width: max-content;
+  text-align: center;
+  padding: 0;
+  top: -6px;
+  position: relative;
+}
+
+.nav-menu a {
+  color: #303030;
+}
+
+.nav-menu svg {
+  width: 13px;
+  position: relative;
+  bottom: 0;
+  vertical-align: middle;
+  right: 3px;
+}
+
+.my-profile {
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  top: 0;
+  font-family: font-bold;
+  font-size: 14px;
+  background-color: rgba(232, 239, 254, 0.6);
+  min-width: 180px;
+  padding: 10px 27px;
+  margin-right: 20px;
+}
+
+.my-profile:hover {
+  background-color: #f8e88b;
+}
+
+.hover-list {
+  transition: all 0.3 ease-in-out;
+  margin-top: 20px;
+  z-index: 999;
+  position: absolute;
+  min-width: 421px;
+  height: 285px;
+  margin-right: -165px;
+  text-align: right;
+  background-color: #fff;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 20px 40px 0 rgba(36, 39, 51, 0.15);
+  border-radius: 12px;
+  border-top: 5px solid #f8e88b;
+  font-size: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 10px;
+}
+
+.right ul,
+.left ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.right ul {
+  padding-right: 15px;
+}
+
+.top-text {
+  font-size: 14px;
+  font-family: font-bold;
+  font-weight: 400;
+  position: relative;
+  top: 5px;
+  color: #303030;
+}
+
+.li-hover-list {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.bottom-text {
+  font-size: 12px;
+  position: relative;
+  font-family: font-medium-2;
+  top: 2px;
+  color: #303030;
+}
+
+.test {
+  margin-top: 2000px;
+}
