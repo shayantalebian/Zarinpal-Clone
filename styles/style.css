@@ -58,12 +58,13 @@ header {
 .more-menu {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .more-menu img {
   width: 8px;
   margin-right: 8px;
+  align-self: center;
 }
 
 @media (max-width: 1200px) {
