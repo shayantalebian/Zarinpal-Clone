@@ -240,6 +240,84 @@ header {
   border-radius: 5px;
 }
 
+/* HOME BANER */
+.baner {
+  width: 1050px;
+  padding: 124px 60px 80px;
+  background-image: linear-gradient(135deg, #21254e, #2b4a83);
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.baner-text h3 {
+  font-family: YekanBakhHeavy;
+  font-size: 32px;
+  color: #fff;
+}
+
+.baner-text p {
+  color: #fff;
+  font-family: YekanBakhMedium;
+  font-size: 18px;
+  margin: 25px 0;
+  line-height: 40px;
+}
+
+.baner-image img {
+  width: 500px;
+}
+
+.baner-buttons {
+  margin-top: 60px;
+}
+
+.register {
+  font-size: 1rem;
+  font-family: YekanBakhBold;
+  color: #000;
+  background-color: #ffd900;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.login {
+  font-size: 1rem;
+  font-family: YekanBakhBold;
+  color: #fff;
+  background-color: #435a8a;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.go-down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 58px;
+}
+
+.go-down div {
+  background-image: url(../images/arrowbottom.svg);
+  width: 164px;
+  height: 78px;
+}
+
+.go-down img {
+  width: 15px;
+  position: relative;
+  top: -60px;
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -266,6 +344,15 @@ header {
   header {
     width: 940px;
   }
+
+  .baner {
+    width: 900px;
+    padding: 60px 40px 120px;
+  }
+
+  .baner-image img {
+    width: 430px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -285,6 +372,30 @@ header {
   .headerul li {
     margin: 0 10px;
   }
+
+  .baner {
+    width: auto;
+    padding: 40px 40px 85px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .baner-image img {
+    display: none;
+  }
+
+  .baner-text {
+    text-align: center;
+  }
+
+  .baner-text p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+
+  .baner-buttons {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -300,10 +411,29 @@ header {
   .hamburger-icon {
     display: block;
   }
+
+  .baner {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 575px) {
+  .baner {
+    padding: 80px 40px;
+  }
+
+  .baner-text h3 {
+    font-size: 1.2rem;
+    text-align: right;
+  }
+
+  .baner-text p {
+    text-align: justify;
+  }
 }
 
 /* BANNER */
-
 .top-banner {
   width: 100%;
   text-decoration: none;
@@ -388,81 +518,4 @@ header {
   .banner-button-click {
     padding: 2px 6px 2px 2px;
   }
-}
-
-.baner {
-  width: 1050px;
-  padding: 124px 60px 80px;
-  background-image: linear-gradient(135deg, #21254e, #2b4a83);
-  border-radius: 20px;
-  margin: 20px auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.baner-text h3 {
-  font-family: YekanBakhHeavy;
-  font-size: 32px;
-  color: #fff;
-}
-
-.baner-text p {
-  color: #fff;
-  font-family: YekanBakhMedium;
-  font-size: 18px;
-  margin: 25px 0;
-  line-height: 40px;
-}
-
-.baner-image img {
-  width: 500px;
-}
-
-.baner-buttons {
-  margin-top: 60px;
-}
-
-.register {
-  font-size: 1rem;
-  font-family: YekanBakhBold;
-  color: #000;
-  background-color: #ffd900;
-  padding: 6px 14px;
-  border: none;
-  border-radius: 10px;
-  margin-left: 10px;
-  text-decoration: none;
-}
-
-.login {
-  font-size: 1rem;
-  font-family: YekanBakhBold;
-  color: #fff;
-  background-color: #435a8a;
-  padding: 6px 14px;
-  border: none;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-.go-down {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  bottom: 58px;
-}
-
-.go-down div {
-  background-image: url(../images/arrowbottom.svg);
-  width: 164px;
-  height: 78px;
-}
-
-.go-down img {
-  width: 15px;
-  position: relative;
-  top: -60px;
 }
